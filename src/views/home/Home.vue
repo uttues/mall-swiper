@@ -10,4 +10,7 @@ export default {
   
 <style scoped>
   
+  div{
+    font-size: 200px;
+  }
 </style>

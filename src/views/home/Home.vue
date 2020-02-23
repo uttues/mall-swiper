@@ -3,11 +3,14 @@
     <nav-bar class="nav-bar">
       <div slot="center">购物街</div>
     </nav-bar>
+    <home-swiper :banners="banners"></home-swiper>
   </div>
 </template>
   
 <script>
 import NavBar from 'components/common/navBar/NavBar'
+
+import HomeSwiper from './childComps/HomeSwiper'
 
 import {getHomeMultipleData,
         BANNER,
@@ -35,6 +38,7 @@ export default {
   },
   components:{
     NavBar,
+    HomeSwiper
   },
 }
 </script>

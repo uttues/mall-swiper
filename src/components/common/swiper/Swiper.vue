@@ -60,7 +60,7 @@ export default {
       this.initSwiperPos()
       // // 开启计时器
       this.startTimer()
-    },100)
+    },200)
   },
   computed:{
     isOnEdge(){

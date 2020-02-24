@@ -7,18 +7,7 @@
       <home-swiper class="home-swiper" :banners="banners"></home-swiper>
       <recommend-view :recommends="recommends"></recommend-view>
       <fashion-view></fashion-view>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-      </ul>
+      <tab-control :list="['流行','新款','精选']"></tab-control>
     </b-scroll>
   </div>
 </template>
@@ -26,6 +15,8 @@
 <script>
 import NavBar from 'components/common/navBar/NavBar'
 import BScroll from 'components/common/bscroll/BScroll'
+
+import TabControl from 'components/content/tabControl/TabControl'
 
 import HomeSwiper from './childComps/HomeSwiper'
 import RecommendView from './childComps/RecommendView'
@@ -58,6 +49,8 @@ export default {
   components:{
     NavBar,
     BScroll,
+    
+    TabControl,
 
     HomeSwiper,
     RecommendView,

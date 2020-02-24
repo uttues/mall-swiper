@@ -16,9 +16,6 @@ export default {
       type:Array,
     }
   },
-  beforeUpdate(){
-    console.log(this.recommends);
-  }
 }
 </script>
   

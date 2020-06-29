@@ -23,6 +23,7 @@ import RecommendView from './childComps/RecommendView'
 import FashionView from './childComps/FashionView'
 
 import {getHomeMultipleData,
+        getHomeGoodsData,
         BANNER,
         RECOMMEND} from 'network/home.js'
 
@@ -36,6 +37,9 @@ export default {
   created(){
     // 1.请求多个数据
     this.getMultiData()
+
+    this.getGoodsData('sell',1)
+
   },
   methods:{
     // 1.请求多个数据
@@ -44,7 +48,13 @@ export default {
         this.banners = res.data[BANNER].list
         this.recommends = res.data[RECOMMEND].list
       })
+    },
+    getGoodsData(type, page){
+      getHomeGoodsData(type,page).then(res=>{
+        console.log(res);
+      })
     }
+
   },
   components:{
     NavBar,

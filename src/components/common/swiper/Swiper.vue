@@ -135,6 +135,9 @@ export default {
       this.swiperStyle = swiperNode.style
       this.itemWidth = parseFloat(swiperNode.offsetWidth)
 
+      console.log(swiperItems);
+      console.log(swiperItems.length);
+      console.log(swiperItems[0]);
       const firstItemClone = swiperItems[0].cloneNode(true)
       const lastItemClone = swiperItems[this.itemCount-1].cloneNode(true)
 

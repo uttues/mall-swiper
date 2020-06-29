@@ -14,6 +14,8 @@ export default {
     MainTabbar,
   }
 }
+
+
 </script>
 
 <style>

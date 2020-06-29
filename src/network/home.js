@@ -9,3 +9,14 @@ export function getHomeMultipleData() {
     url:'/home/multidata'
   })
 }
+
+export function getHomeGoodsData(type, page) {
+  console.log('getHomeGoodsData');
+  return axios({
+    url: '/home/data',
+    params: {
+      type,
+      page
+    }
+  })
+}
